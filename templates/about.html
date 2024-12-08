@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Health Care center</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body{
+            /* background-image: url("../static/asserts/medical.webp") !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+        main{
+            height: 57.5vh;
+            display: flex;
+            gap: 5rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+        .about h2{
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <h1>Health Care Center</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/developer">Developer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div>
+            <img src="../static/asserts/abt.png" alt="">
+        </div>
+        <section class="about">
+            <h2 class="text-center">About Us</h2>
+            <p>We are committed to providing personalized and safe medicine recommendations based on your health data. Our system uses advanced algorithms to suggest the best medicines tailored to your specific needs.</p>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-2">
+        <p>&copy; 2024 Health care center</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
